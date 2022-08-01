@@ -1,0 +1,6 @@
+framework module Pods_location_detector {
+  umbrella header "Pods-location-detector-umbrella.h"
+
+  export *
+  module * { export * }
+}

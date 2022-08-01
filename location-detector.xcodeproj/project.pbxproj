@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3CD6BE40B2C5605C0FA04C9 /* Pods_location_detector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C0F32045A83423681A60D3 /* Pods_location_detector.framework */; };
 		DCD137DA2896175200928C73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD137D92896175200928C73 /* AppDelegate.swift */; };
-		DCD137DC2896175200928C73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD137DB2896175200928C73 /* SceneDelegate.swift */; };
-		DCD137DE2896175200928C73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD137DD2896175200928C73 /* ViewController.swift */; };
-		DCD137E12896175200928C73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD137DF2896175200928C73 /* Main.storyboard */; };
 		DCD137E32896175700928C73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD137E22896175700928C73 /* Assets.xcassets */; };
-		DCD137E62896175700928C73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD137E42896175700928C73 /* LaunchScreen.storyboard */; };
+		DCD137EE289618D600928C73 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD137ED289618D600928C73 /* MainView.swift */; };
+		DCD137F2289622D500928C73 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD137F1289622D500928C73 /* LocationViewModel.swift */; };
+		DCD137F428966F4A00928C73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD137F328966F4A00928C73 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3795C139752AE9A75F4F6EF9 /* Pods-location-detector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-location-detector.release.xcconfig"; path = "Target Support Files/Pods-location-detector/Pods-location-detector.release.xcconfig"; sourceTree = "<group>"; };
+		84475E4B323FF7360B5D5633 /* Pods-location-detector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-location-detector.debug.xcconfig"; path = "Target Support Files/Pods-location-detector/Pods-location-detector.debug.xcconfig"; sourceTree = "<group>"; };
+		A9C0F32045A83423681A60D3 /* Pods_location_detector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_location_detector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD137D62896175200928C73 /* location-detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "location-detector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD137D92896175200928C73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DCD137DB2896175200928C73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DCD137DD2896175200928C73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DCD137E02896175200928C73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCD137E22896175700928C73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DCD137E52896175700928C73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCD137E72896175700928C73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD137ED289618D600928C73 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DCD137F1289622D500928C73 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		DCD137F328966F4A00928C73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3CD6BE40B2C5605C0FA04C9 /* Pods_location_detector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A68AC2E531A8BA6856E2D58C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9C0F32045A83423681A60D3 /* Pods_location_detector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DCD137CD2896175200928C73 = {
 			isa = PBXGroup;
 			children = (
 				DCD137D82896175200928C73 /* location-detector */,
 				DCD137D72896175200928C73 /* Products */,
+				DD6C88812F5DEC0E54985A07 /* Pods */,
+				A68AC2E531A8BA6856E2D58C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +70,22 @@
 			isa = PBXGroup;
 			children = (
 				DCD137D92896175200928C73 /* AppDelegate.swift */,
-				DCD137DB2896175200928C73 /* SceneDelegate.swift */,
-				DCD137DD2896175200928C73 /* ViewController.swift */,
-				DCD137DF2896175200928C73 /* Main.storyboard */,
+				DCD137ED289618D600928C73 /* MainView.swift */,
 				DCD137E22896175700928C73 /* Assets.xcassets */,
-				DCD137E42896175700928C73 /* LaunchScreen.storyboard */,
 				DCD137E72896175700928C73 /* Info.plist */,
+				DCD137F1289622D500928C73 /* LocationViewModel.swift */,
+				DCD137F328966F4A00928C73 /* SceneDelegate.swift */,
 			);
 			path = "location-detector";
+			sourceTree = "<group>";
+		};
+		DD6C88812F5DEC0E54985A07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84475E4B323FF7360B5D5633 /* Pods-location-detector.debug.xcconfig */,
+				3795C139752AE9A75F4F6EF9 /* Pods-location-detector.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCD137EA2896175700928C73 /* Build configuration list for PBXNativeTarget "location-detector" */;
 			buildPhases = (
+				12EDDB6F31CC7235EA1DD04B /* [CP] Check Pods Manifest.lock */,
 				DCD137D22896175200928C73 /* Sources */,
 				DCD137D32896175200928C73 /* Frameworks */,
 				DCD137D42896175200928C73 /* Resources */,
+				FD0FBAA17427CCA6CAB6BD97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,45 +148,67 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCD137E62896175700928C73 /* LaunchScreen.storyboard in Resources */,
 				DCD137E32896175700928C73 /* Assets.xcassets in Resources */,
-				DCD137E12896175200928C73 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12EDDB6F31CC7235EA1DD04B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-location-detector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD0FBAA17427CCA6CAB6BD97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-location-detector/Pods-location-detector-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-location-detector/Pods-location-detector-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-location-detector/Pods-location-detector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCD137D22896175200928C73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCD137DE2896175200928C73 /* ViewController.swift in Sources */,
+				DCD137F2289622D500928C73 /* LocationViewModel.swift in Sources */,
+				DCD137EE289618D600928C73 /* MainView.swift in Sources */,
 				DCD137DA2896175200928C73 /* AppDelegate.swift in Sources */,
-				DCD137DC2896175200928C73 /* SceneDelegate.swift in Sources */,
+				DCD137F428966F4A00928C73 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		DCD137DF2896175200928C73 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DCD137E02896175200928C73 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DCD137E42896175700928C73 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DCD137E52896175700928C73 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DCD137E82896175700928C73 /* Debug */ = {
@@ -282,6 +327,7 @@
 		};
 		DCD137EB2896175700928C73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84475E4B323FF7360B5D5633 /* Pods-location-detector.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,9 +335,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "location-detector/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = Please;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Please;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +356,7 @@
 		};
 		DCD137EC2896175700928C73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3795C139752AE9A75F4F6EF9 /* Pods-location-detector.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,9 +364,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "location-detector/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = Please;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Please;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
